@@ -47,7 +47,7 @@ export const Home: React.FC = () => {
 
         <div className="absolute bottom-8 md:bottom-12 animate-bounce text-white/80 flex flex-col items-center gap-2">
             <span className="text-[8px] md:text-[10px] uppercase tracking-widest">Scroll</span>
-            <ArrowDown size={16} md:size={20} strokeWidth={1} />
+            <ArrowDown className="w-4 h-4 md:w-5 md:h-5" strokeWidth={1} />
         </div>
       </section>
 
