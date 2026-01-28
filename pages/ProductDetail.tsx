@@ -1,9 +1,6 @@
 import React from 'react';
 
+// This component is kept to prevent build errors if referenced, but renders nothing.
 export const ProductDetail: React.FC = () => {
-  return (
-    <div className="min-h-screen flex items-center justify-center font-serif text-brand-primary">
-      Redirecting...
-    </div>
-  );
+  return null;
 };
