@@ -5,6 +5,8 @@ let ai: GoogleGenAI | null = null;
 
 const getAIClient = () => {
   if (!ai) {
+    // Access process.env.API_KEY directly as required by the build configuration.
+    // The build process (Vite) replaces this string with the actual env value.
     const apiKey = process.env.API_KEY;
     if (apiKey) {
       ai = new GoogleGenAI({ apiKey });
@@ -40,23 +42,7 @@ export const chatWithAgent = async (
 
     const model = 'gemini-3-flash-preview';
     
-    // Transform history for the API
-    // Note: The new SDK uses a stateless approach or chat sessions. 
-    // For simplicity in this functional component wrapper, we will use generateContent with the history as context in the prompt 
-    // or use a fresh chat session each time if we want to maintain state properly. 
-    // However, to strictly follow the guidelines and efficient usage, we'll use a chat session if possible, 
-    // but here we will simulate a turn by sending recent history + new message to generateContent for simplicity in a stateless service function,
-    // OR better, instantiate a chat.
-    
-    // Let's use ai.chats.create for proper history management if we were persistent, 
-    // but since this function is called once per send, we'll recreate the context or just use generateContent for the immediate response.
-    // To give the best "Chat" experience, we will include the history in the "contents" as a multi-turn structure if the API supports it in one go, 
-    // but the Chat object is stateful.
-    
-    // Better approach for this stateless service export: Use generateContent but prepend history to the prompt manually 
-    // or properly map it to the Content object structure if we were building a full chat object manager.
-    // For this implementation, we will use a simple generateContent call with system instruction.
-    
+    // Using generateContent with manual history management for a stateless request.
     const response = await client.models.generateContent({
       model: model,
       contents: [
