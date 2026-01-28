@@ -18,7 +18,7 @@ export const PROPERTIES: PropertyDetails[] = [
     Upon exiting your private elevator, you are greeted by a gallery-style foyer clad in rift-cut white oak and Noir Saint Laurent marble. The Great Room, spanning 80 feet of linear frontage, offers unobstructed, cinematic views of Central Park and the Hudson River through 14-foot floor-to-ceiling Starphire glass.
     
     The chef's kitchen is a masterpiece of minimalism, featuring custom Dada cabinetry, Gaggenau 400 series appliances, and a sculptural Calacatta Borghini marble island. The primary suite is a wing unto itself, complete with dual dressing rooms and a spa bath featuring a monolithic stone tub carved from a single block of quartzite.`,
-    features: ['Panoramic City Views', '2,000sf Terrace', 'Private Elevator', 'Smart Home Lutron', '24/7 White Glove Concierge', 'Wine Cellar'],
+    features: ['Skyline', 'Panoramic City Views', '2,000sf Terrace', 'Private Elevator', 'Smart Home Lutron', '24/7 White Glove Concierge', 'Wine Cellar'],
     specs: {
       yearBuilt: '2022',
       lotSize: 'N/A',
@@ -50,7 +50,7 @@ export const PROPERTIES: PropertyDetails[] = [
     The blurred line between indoor and outdoor living is achieved through automated Vitrocsa glass walls that vanish into pockets, transforming the main living area into an open-air pavilion. The infinity pool appears to spill directly into the ocean horizon.
     
     A lower entertainment level includes a Dolby Atmos screening room, a temperature-controlled wine cave holding 1,500 bottles, and a wellness center with a dry sauna and cold plunge.`,
-    features: ['Infinity Pool', 'Private Beach Stairs', 'Wellness Center', 'Wine Cave', 'Screening Room', 'Gated Entry'],
+    features: ['Waterfront', 'Alpine', 'Infinity Pool', 'Private Beach Stairs', 'Wellness Center', 'Wine Cave', 'Screening Room', 'Gated Entry'],
     specs: {
       yearBuilt: '2019',
       lotSize: '2.4 Acres',
@@ -82,7 +82,7 @@ export const PROPERTIES: PropertyDetails[] = [
     Original details include 12-foot ceilings, crown moldings, and eight working fireplaces with original marble mantels. The parlor level features a grand formal living room and library connected by pocket doors. 
     
     Hidden behind the classic brick façade is a modern elevator serving all five levels, a radiant heated garden patio with lush landscaping, and a rooftop deck offering rare glimpses of the Charles River.`,
-    features: ['Original Moldings', '8 Fireplaces', 'Elevator', 'Private Walled Garden', 'Rooftop Deck', 'Au Pair Suite'],
+    features: ['Estate', 'Historic', 'Original Moldings', '8 Fireplaces', 'Elevator', 'Private Walled Garden', 'Rooftop Deck', 'Au Pair Suite'],
     specs: {
       yearBuilt: '1840',
       lotSize: '0.15 Acres',
@@ -114,7 +114,7 @@ export const PROPERTIES: PropertyDetails[] = [
     The space is defined by its dramatic 16-foot timber ceilings and massive concrete columns. A 40-foot wall of original steel-framed factory windows floods the space with northern light. The open-concept kitchen features matte black cabinetry and a professional grade Wolf range.
     
     A custom steel staircase leads to a mezzanine loft, perfect for a home office or creative studio.`,
-    features: ['16ft Timber Ceilings', 'Exposed Brick', 'Mezzanine Level', 'Chef\'s Kitchen', 'Freight Elevator', 'Heated Concrete Floors'],
+    features: ['Urban', '16ft Timber Ceilings', 'Exposed Brick', 'Mezzanine Level', 'Chef\'s Kitchen', 'Freight Elevator', 'Heated Concrete Floors'],
     specs: {
       yearBuilt: '1924 (Renovated 2021)',
       lotSize: 'N/A',
@@ -146,7 +146,7 @@ export const PROPERTIES: PropertyDetails[] = [
     The building achieves LEED Platinum certification, utilizing passive cooling, solar arrays, and rainwater harvesting. The interior features a central atrium with a living green wall that spans three stories, improving air quality and acoustics.
     
     Amenities include a full-service cafeteria, a fitness center with locker rooms, and a rooftop event space capable of hosting 300 guests.`,
-    features: ['LEED Platinum', 'Living Green Wall', 'Rooftop Event Space', 'Solar Array', 'Fiber Optic Backbone', 'Secure Server Room'],
+    features: ['Skyline', 'LEED Platinum', 'Living Green Wall', 'Rooftop Event Space', 'Solar Array', 'Fiber Optic Backbone', 'Secure Server Room'],
     specs: {
       yearBuilt: '2023',
       lotSize: '5 Acres',
@@ -178,7 +178,7 @@ export const PROPERTIES: PropertyDetails[] = [
     The inverted floor plan maximizes ocean views from the main living areas on the top floor. Shiplap walls, white oak floors, and a color palette inspired by sea glass create a soothing atmosphere. 
     
     The wrap-around porches add an additional 1,500 square feet of living space, perfect for sunset cocktails or watching the dolphins play in the surf.`,
-    features: ['Direct Beach Access', 'Wrap-around Porch', 'Inverted Floor Plan', 'Outdoor Shower', 'Elevator', 'Designer Furnished'],
+    features: ['Waterfront', 'Direct Beach Access', 'Wrap-around Porch', 'Inverted Floor Plan', 'Outdoor Shower', 'Elevator', 'Designer Furnished'],
     specs: {
       yearBuilt: '2018',
       lotSize: '0.5 Acres',

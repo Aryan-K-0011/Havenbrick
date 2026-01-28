@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { ArrowRight, ArrowDown, Waves, Landmark, Shield, Key, TrendingUp, Mountain } from 'lucide-react';
 import { PropertyCard } from '../components/PropertyCard';
 import { useData } from '../context/DataContext';
@@ -9,6 +9,7 @@ import { ARTICLES, Article } from '../journalData';
 export const Home: React.FC = () => {
   const { properties } = useData();
   const [selectedArticle, setSelectedArticle] = useState<Article | null>(null);
+  const navigate = useNavigate();
 
   return (
     <div className="flex flex-col min-h-screen bg-brand-bg selection:bg-brand-accent selection:text-white overflow-x-hidden">
@@ -109,7 +110,12 @@ export const Home: React.FC = () => {
                     { title: "Alpine", icon: Mountain, img: "https://images.unsplash.com/photo-1518780664697-55e3ad937233?q=80&w=800" },
                     { title: "Estates", icon: Shield, img: "https://images.unsplash.com/photo-1613545325278-f24b0cae1224?q=80&w=800" }
                 ].map((item, idx) => (
-                    <div key={idx} className="group relative h-64 md:h-96 overflow-hidden cursor-pointer reveal rounded-sm shadow-sm hover:shadow-xl transition-all duration-500" style={{transitionDelay: `${idx * 0.1}s`}}>
+                    <div 
+                        key={idx} 
+                        onClick={() => navigate(`/listings?search=${item.title}`)}
+                        className="group relative h-64 md:h-96 overflow-hidden cursor-pointer reveal rounded-sm shadow-sm hover:shadow-xl transition-all duration-500" 
+                        style={{transitionDelay: `${idx * 0.1}s`}}
+                    >
                         <img src={item.img} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
                         <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
                         <div className="absolute bottom-6 left-6">
