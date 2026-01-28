@@ -1,16 +1,4 @@
-import { Property } from './types';
-
-export interface PropertyDetails extends Property {
-  extendedDescription: string;
-  specs: {
-    yearBuilt: string;
-    lotSize: string;
-    hoa: string;
-    parking: string;
-    exposure: string;
-    zoning: string;
-  };
-}
+import { PropertyDetails } from './types';
 
 export const PROPERTIES: PropertyDetails[] = [
   {
