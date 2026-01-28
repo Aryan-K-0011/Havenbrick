@@ -11,13 +11,13 @@
           extend: {
             colors: {
               brand: {
-                bg: '#F9F9F7',       // Warm Alabaster (Main Background)
-                surface: '#FFFFFF',  // Pure White (Cards/Sections)
-                primary: '#1C1C1C',  // Near Black (Headings)
-                secondary: '#555555',// Dark Grey (Body text)
-                accent: '#BFA15F',   // Bronze Gold (Buttons/Highlights)
-                border: '#E5E5E5',   // Light Borders
-                soft: '#F4F4F5',     // Light Grey (Secondary Backgrounds)
+                bg: '#F9F9F7',
+                surface: '#FFFFFF',
+                primary: '#1C1C1C',
+                secondary: '#555555',
+                accent: '#BFA15F',
+                border: '#E5E5E5',
+                soft: '#F4F4F5',
               }
             },
             fontFamily: {
@@ -58,8 +58,6 @@
         color: #1C1C1C;
         overflow-x: hidden;
       }
-      
-      /* Subtle Texture */
       .bg-noise {
         position: fixed;
         top: 0;
@@ -68,14 +66,10 @@
         height: 100%;
         pointer-events: none;
         z-index: 50;
-        opacity: 0.03; /* Very subtle on light theme */
+        opacity: 0.03;
         background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
       }
-
-      h1, h2, h3, h4, h5, h6 {
-        font-family: 'Cormorant Garamond', serif;
-      }
-      
+      h1, h2, h3, h4, h5, h6 { font-family: 'Cormorant Garamond', serif; }
       .reveal {
         opacity: 0;
         transform: translateY(40px);
@@ -85,26 +79,11 @@
         opacity: 1;
         transform: translateY(0);
       }
-      
-      ::selection {
-        background: #BFA15F;
-        color: #FFFFFF;
-      }
-
-      /* Custom Scrollbar */
-      ::-webkit-scrollbar {
-        width: 6px;
-      }
-      ::-webkit-scrollbar-track {
-        background: #F9F9F7; 
-      }
-      ::-webkit-scrollbar-thumb {
-        background: #D4D4D4; 
-        border-radius: 3px;
-      }
-      ::-webkit-scrollbar-thumb:hover {
-        background: #BFA15F; 
-      }
+      ::selection { background: #BFA15F; color: #FFFFFF; }
+      ::-webkit-scrollbar { width: 6px; }
+      ::-webkit-scrollbar-track { background: #F9F9F7; }
+      ::-webkit-scrollbar-thumb { background: #D4D4D4; border-radius: 3px; }
+      ::-webkit-scrollbar-thumb:hover { background: #BFA15F; }
     </style>
   <script type="importmap">
 {
